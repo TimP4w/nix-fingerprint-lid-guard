@@ -81,6 +81,6 @@ security.pam.services.gdm.fprintAuth = true;
 
 ## Acknowledgment
 
-Inspired by this blog post on [heywoodlg.io](https://heywoodlh.io/disable-fprint-clamshell-laptop/).
+Inspired by this blog post on [heywoodlh.io](https://heywoodlh.io/disable-fprint-clamshell-laptop/).
 
 The original author also proposed a PR here [NixOS/nixpkgs#342676](https://github.com/NixOS/nixpkgs/pull/342676), however it wasn't merged, hence this flake to add the same functionality, with some configurable options.
