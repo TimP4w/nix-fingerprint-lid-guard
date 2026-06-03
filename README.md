@@ -54,6 +54,22 @@ services.fprintd.lid-guard = {
 };
 ```
 
+Full example from my configuration
+
+```nix
+services.fprintd = {
+  enable = true;
+  lid-guard = {
+    enable = true;
+    extraPamServices = [
+      "gdm"
+    ];
+  };
+};
+
+security.pam.services.gdm.fprintAuth = true;
+```
+
 ## Options
 
 | Option | Type | Default | Description |
