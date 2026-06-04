@@ -4,7 +4,7 @@
   outputs =
     { self, ... }:
     {
-      nixosModules.fingerprint = import ./module;
+      nixosModules.fingerprint = ./module;
       nixosModules.default = self.nixosModules.fingerprint;
     };
 }
