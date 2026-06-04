@@ -24,10 +24,7 @@ Add the flake as an input and import the module:
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
-    fingerprint-lid-guard = {
-      url = "github:timp4w/nix-fingerprint-lid-guard";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    fingerprint-lid-guard.url = "github:timp4w/nix-fingerprint-lid-guard";
   };
 
   outputs = { nixpkgs, fingerprint-lid-guard, ... }: {
